@@ -1,13 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Turing Fullstack challange",
+  "description": "Xiaomi  challange",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Anjana Gihan Wijesooriya",
+  "author": "Kiran Kumar",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
