@@ -1,10 +1,10 @@
 const GetShippingRegions = (request, response) => {
     try {
         let query = `SELECT 
-                        A.shipping_region_id AS 'RegionId',
-                        A.shipping_region AS 'Region'
+                        A.billing_region_id AS 'RegionId',
+                        A.billing_region AS 'Region'
                     FROM shipping_region A 
-                    ORDER BY shipping_region_id ASC`; // query database to get all the  Shipping Regions
+                    ORDER BY billing_region_id ASC`; // query database to get all the  billing Regions
 
         // execute query
         db.query(query, (err, result) => {
@@ -17,8 +17,8 @@ const GetShippingRegions = (request, response) => {
     }
 };
 
-const shipping = {
-    GetShippingRegions
+const billing = {
+    GetbillingRegions
 };
 
-module.exports = shipping; 
+module.exports = billing; 
