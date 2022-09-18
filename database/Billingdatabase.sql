@@ -4,7 +4,7 @@ CREATE TABLE `user schema` (
 `address`     VARCHAR(1000)   NOT NULL,   
 `mobile_number`VARCHAR(10)   NOT NULL, 
 `account Type' VARCHAR(100)   NOT NULL,
-PRIMARY KEY  (`mi_id`)
+ADD PRIMARY KEY  (`mi_id`)
 ) ENGINE=MyISAM;
 
 CREATE TABLE `vendor schema` (
@@ -14,7 +14,7 @@ CREATE TABLE `vendor schema` (
 `Sales / Operator_ID`VARCHAR(20)   NOT NULL, 
 `Inventory Manager' VARCHAR(20)    NOT NULL,
 'Address details attribute' VARCHAR(100)   NOT NULL,
-PRIMARY KEY  (`vendor_id`)
+ADD PRIMARY KEY  (`vendor_id`)
 ) ENGINE=MyISAM;
 
 
@@ -24,7 +24,7 @@ CREATE TABLE `Inventory Schema` (
 `availability`     VARCHAR(2000)       NOT NULL,   
 `inventory manager_id(20)   NOT NULL, 
 'inventory adder_id' VARCHAR(20)   NOT NULL,
-PRIMARY KEY  (`product set_id`)
+ADD PRIMARY KEY  (`product set_id`)
 Foreign Key  ('POS_ID  REFERENCES Vendor Schema')
 ) ENGINE=MyISAM;
 
@@ -34,7 +34,7 @@ CREATE TABLE `Product Schema` (
 `product_name`     VARCHAR(20)       NOT NULL,   
 `model_no`VARCHAR(20)   NOT NULL, 
 `color' VARCHAR(6)    NOT NULL,
-PRIMARY KEY  (`product set_id`)
+ADD PRIMARY KEY  (`product set_id`)
 Foreign Key  ('POS_ID  REFERENCES Vendor Schema')
 ) ENGINE=MyISAM;
 
